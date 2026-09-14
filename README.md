@@ -1,7 +1,7 @@
 # low-poly
 
 A browser experiment: three low-poly floating islands rendered with Three.js,
-with live controls for lighting, time of day, and per-island motion.
+with live controls for lighting, time of day, and island bob speed.
 
 Everything is plain HTML, CSS, and JavaScript. There is no build step and no
 package manager. Three.js r128 loads from a CDN.
@@ -25,14 +25,14 @@ python3 -m http.server 8000
 ```
 
 Opening `islands.html` directly from the filesystem also works, since the
-only external resource is the CDN script.
+only external resources are the Three.js CDN script and a Google web font.
 
 Once it loads:
 
 - Drag to orbit the camera; click an island to focus on it.
 - **Scene Controls** adjusts sun intensity, ambient light, and how fast the
   first island bobs.
-- **Island Dev Tools** adjusts time of day and per-island rotation.
+- **Island Dev Tools** adjusts time of day.
 
 ## Contributing
 
